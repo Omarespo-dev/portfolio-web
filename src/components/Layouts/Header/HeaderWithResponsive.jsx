@@ -7,8 +7,10 @@ import HeaderNavMobile from "./HeaderNavMobile"
 export default function HeaderWithResponsive() {
     return (
         <>
-            <HeaderNav />
-            {/* <HeaderNavMobile /> */}
+            <header>
+                <HeaderNav />
+                <HeaderNavMobile />
+            </header>
         </>
     )
 }
