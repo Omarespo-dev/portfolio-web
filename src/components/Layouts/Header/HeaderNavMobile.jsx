@@ -13,7 +13,7 @@ export default function HeaderNavMobile({closeNav,showNav}) {
             <div className="bg-black/35 w-[100%] h-screen z-50 fixed"></div>
 
             {/* Content Responsive Nav */}
-            <div className="bg-zinc-800 w-[300px] h-screen z-60 fixed">
+            <div className="bg-zinc-800 w-[250px] h-screen z-60 fixed">
                 <section className="flex justify-end p-[20px]">
                     <IoCloseSharp className="text-white w-[50px] h-[50px] cursor-pointer" onClick={closeNav}/>
                 </section>
