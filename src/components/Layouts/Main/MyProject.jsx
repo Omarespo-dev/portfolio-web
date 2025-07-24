@@ -1,7 +1,9 @@
-import React from 'react'
+
 
 export default function MyProject() {
   return (
-    <div>MyProject</div>
+    <div className="bg-zinc-900 h-[500px]">
+      
+    </div>
   )
 }

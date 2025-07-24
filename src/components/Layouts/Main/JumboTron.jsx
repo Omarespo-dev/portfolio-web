@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function JumboTron() {
   return (
-    <div className="bg-[#D7D7D7] h-auto flex flex-col md:flex-row">
+    <div className="bg-[#D7D7D7]  flex flex-col md:flex-row ">
       <div className="w-full md:w-[45%] flex justify-center items-center">
         <section className="flex flex-col p-[10px] ">
           <h3 className="pb-[10px] "><strong> Ciao, lo sono</strong></h3>

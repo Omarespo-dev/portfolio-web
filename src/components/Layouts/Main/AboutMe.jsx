@@ -28,7 +28,7 @@ export default function AboutMe() {
         </section>
       </div>
 
-      <div className="w-[90%]  justify-center p-[20px]  flex-wrap flex-col mt-[30px]">
+      <div className="w-[70%]  justify-center p-[20px]  flex-wrap flex-col mt-[30px]">
         {/* SEPARATOR */}
         <section className=" flex justify-center">
           <img src="/img/separatorBlack 1.png" alt="" className="w-[180px]" />
