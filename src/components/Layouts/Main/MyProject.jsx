@@ -1,3 +1,5 @@
+import { projectDataNormal } from "../../../../data/ProjectData";
+
 export default function MyProject() {
   return (
     <div className="flex flex-wrap justify-center bg-zinc-100">
@@ -11,54 +13,53 @@ export default function MyProject() {
 
       <div className="w-[80%]  justify-center p-[5px] flex-wrap flex-col mt-[30px] ">
 
-        {/* SECTION 1 */}
-        <div className="  flex mb-[50px]">
-          {/* IMG O VIDEO */}
-          <section className=" w-[50%] h-[300px] flex items-center justify-center ">
-            <video
-              src="/img/video1_1.mp4"
-              className="w-full h-full object-cover rounded-4xl shadow-2xl/40 "
-              autoPlay
-              loop
-              muted
-            ></video>
-          </section>
-
-          {/* DESCRIZIONE  */}
-          <section className=" w-[60%]  p-[30px]">
-            <h1>01</h1>
-            <h2>Crypto Screener Application</h2>
-            <p>I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.</p>
-          </section>
-        </div>
-
-        {/* <div className=" h-[300px] flex">
-
-          
-          <section className=" w-[60%] h-[300px] p-[30px]">
-            <h1>01</h1>
-            <h2>Crypto Screener Application</h2>
-            <p>I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.</p>
-          </section>
-
-          
-          <section className=" w-[50%] h-[300px] flex items-center justify-center ">
-            <video
-              src="/img/video1_1.mp4"
-              className="w-full h-full object-cover rounded-4xl "
-              autoPlay
-              loop
-              muted
-            ></video>
-          </section>
-
-          
-        </div>  */}
+        {projectDataNormal.map(pro => (
+          <div className="flex mb-[50px]" key={pro.id}>
+            {pro.number === "02" || pro.number === "04" ? (
+              <>
+                <section className="w-[60%] h-[300px] p-[30px]">
+                  <h1>{pro.number}</h1>
+                  <h2>{pro.title}</h2>
+                  <p>{pro.description}</p>
+                </section>
+                <section className="w-[50%] h-[350px] flex items-center justify-center border-2 border-zinc-400 rounded-2xl shadow-2xl/20">
+                  <video
+                    src={pro.video}
+                    className="w-full h-full object-cover rounded-2xl"
+                    autoPlay
+                    loop
+                    muted
+                  ></video>
+                </section>
+              </>
+            ) : (
+              <>
+                <section className="w-[50%] h-[350px] flex items-center justify-center rounded-2xl  border-2 border-zinc-400 shadow-2xl/20" >
+                  <video
+                    src={pro.video}
+                    className="w-full h-full object-cover rounded-2xl"
+                    autoPlay
+                    loop
+                    muted
+                  ></video>
+                </section>
+                <section className="w-[60%] p-[30px]">
+                  <h1>{pro.number}</h1>
+                  <h2>{pro.title}</h2>
+                  <p>{pro.description}</p>
+                  <a href={pro.linkGit}>vai</a>
+                </section>
+              </>
+            )}
+          </div>
+        ))}
 
 
 
-      </div>
 
-    </div>
+
+      </div >
+
+    </div >
   )
 }
