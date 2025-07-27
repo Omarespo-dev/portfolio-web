@@ -1,67 +1,74 @@
-## Portfolio Project
-1) Completare layout Grafico per tutta la pagina 
-2) 
+# Portfolio Project
 
+## Obiettivo Principale
+- Completare il layout grafico per tutta la pagina
 
-## Macro layout per ogni componente 
+---
 
-# FATTE ✅
-1) Header/HeaderMobile
-    -Aggiunto layout 
-    -Aggiunto responsive con burgerMenu
-    -DATI INCAPSULATI IN HeaderNavContent.js
+## Macro layout per ogni componente
 
-2) Jumbotron
-    -Aggiunto layout 
-    -Aggiunto responsive con burgerMenu   
+### FATTE ✅
 
-3) MySkills
-    -Aggiunto layout 
-    -Aggiunto responsive
-    -Aggiunto Logica per Explore More
-    -DATI INCAPSULATI IN Skills.jsx
+1) **Header/HeaderMobile**
+   - Aggiunto layout
+   - Aggiunto responsive con burgerMenu
+   - Dati incapsulati in `HeaderNavContent.js`
 
-4) AboutMe
-    -Aggiunto layout
-    -Aggiunto responsive
-    -Aggiunta logica per Explore
+2) **Jumbotron**
+   - Aggiunto layout
+   - Aggiunto responsive con burgerMenu
 
-5) MyProject
-    -Aggiunto layout / con video
-    -Aggiunto Collegamento del Progetto alla repo
-    -DATI INCAPSULATI IN ProjectData.js
+3) **MySkills**
+   - Aggiunto layout
+   - Aggiunto responsive
+   - Aggiunta logica per *Explore More*
+   - Dati incapsulati in `Skills.jsx`
 
-6) ContactMe
-    -Aggiunto layout
-    -Aggiunto responsive
+4) **AboutMe**
+   - Aggiunto layout
+   - Aggiunto responsive
+   - Aggiunta logica per *Explore*
 
-# MANCANTE ❌
-1) Header/HeaderMobile
-    -Aggiungere collegamenti con i vari tag about me etc..
+5) **MyProject**
+   - Aggiunto layout con video
+   - Collegamento del progetto alla repo
+   - Dati incapsulati in `ProjectData.js`
 
-2) Jumbotron
-    -Aggiungere responsive
-    -Aggiungere collegamenti per Gmail/linkedin/git
+6) **ContactMe**
+   - Aggiunto layout
+   - Aggiunto responsive
 
-5) MyProject
-    -Aggiungere responsive
-    -🎁(Bonus) Aggiungere la possibilita di cliccare sul video e aprirsi come una modale che fa vedere il video
+---
 
-6) ContactMe
-    -Aggiungere Logica per Invio Form
-    -Aggiungere state per input 
-    -Aggiungere Controlli per Gestire gli Errori in tempo reale per Nome ed Email
-    -Aggiungere La possibilita che input Number non si possa scrivere ghli altri caratteri della tastiera ma solo dal 0-9 / Altrimenti gestire errore che non e un numero con lo state
+### MANCANTE ❌
 
-    ///// :) /////
-    -Aggiungere controllo per Gestire il messaggio in modo che viene solo submittato con UseRef
+1) **Header/HeaderMobile**
+   - Aggiungere collegamenti con i vari tag (About Me, ecc.)
 
-7) Footer
-    -Aggiungere Layout
-    -Aggiungere Responsive 
-    -Aggiungere Vari collegamenti GLI STESSI del Header
-    -Aggiungere un Back to Top con freccietta
+2) **Jumbotron**
+   - Aggiungere responsive (completare)
+   - Aggiungere collegamenti per Gmail, LinkedIn, GitHub
 
+5) **MyProject**
+   - Aggiungere responsive
+   - 🎁 **Bonus:** possibilità di cliccare sul video e aprirlo in una modale
 
-# DA FIXARE ⚠️
+6) **ContactMe**
+   - Aggiungere logica per invio form
+   - Aggiungere state per input
+   - Aggiungere controlli per errori in tempo reale per Nome ed Email
+   - Aggiungere limitazione input Number (solo 0-9)
+   - Gestire errori per input non numerici tramite state
+   - 😊 **Extra:** aggiungere controllo per submit messaggio con `useRef`
 
+7) **Footer**
+   - Aggiungere layout
+   - Aggiungere responsive
+   - Aggiungere collegamenti (gli stessi del Header)
+   - Aggiungere "Back to Top" con freccia
+
+---
+
+### DA FIXARE ⚠️
+
+*(Inserisci qui i punti da correggere)*
