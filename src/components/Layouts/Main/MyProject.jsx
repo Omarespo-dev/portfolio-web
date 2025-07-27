@@ -19,7 +19,7 @@ export default function MyProject() {
       <div className="w-[80%]  justify-center p-[5px] flex-wrap flex-col mt-[30px] ">
 
         {projectDataNormal.map(pro => (
-          <div className="flex mb-[50px]" key={pro.id}>
+          <div className="flex mb-[50px] hover:bg-zinc-900 duration-200 ease-in hover:text-white hover:rounded-2xl cursor-pointer rounded-2xl" key={pro.id}>
             {pro.number === "02" || pro.number === "04" ? (
               <>
                 <section className="w-[60%] h-[300px] p-[30px]">
