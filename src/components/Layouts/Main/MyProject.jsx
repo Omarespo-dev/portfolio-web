@@ -1,4 +1,9 @@
+//importo dati project
 import { projectDataNormal } from "../../../../data/ProjectData";
+
+// Importo Icone 
+import { FaExternalLinkAlt } from "react-icons/fa";
+
 
 export default function MyProject() {
   return (
@@ -18,9 +23,12 @@ export default function MyProject() {
             {pro.number === "02" || pro.number === "04" ? (
               <>
                 <section className="w-[60%] h-[300px] p-[30px]">
-                  <h1>{pro.number}</h1>
-                  <h2>{pro.title}</h2>
-                  <p>{pro.description}</p>
+                  <h1 className="font-extrabold text-[25px]">{pro.number}</h1>
+                  <h2 className="font-bold text-[25px] mt-[10px]">{pro.title}</h2>
+                  <p className=" text-[14px] mt-[10px]">{pro.description}</p>
+                  <section className="mt-[10px] inline-block">
+                    <a href={pro.linkGit} ><FaExternalLinkAlt size={16} /></a>
+                  </section>
                 </section>
                 <section className="w-[50%] h-[350px] flex items-center justify-center border-2 border-zinc-400 rounded-2xl shadow-2xl/20">
                   <video
@@ -44,19 +52,17 @@ export default function MyProject() {
                   ></video>
                 </section>
                 <section className="w-[60%] p-[30px]">
-                  <h1>{pro.number}</h1>
-                  <h2>{pro.title}</h2>
-                  <p>{pro.description}</p>
-                  <a href={pro.linkGit}>vai</a>
+                  <h1 className="font-extrabold text-[25px]">{pro.number}</h1>
+                  <h2 className="font-bold text-[25px] mt-[10px]">{pro.title}</h2>
+                  <p className="text-[14px] mt-[10px]">{pro.description}</p>
+                  <section className="mt-[10px] inline-block">
+                    <a href={pro.linkGit} ><FaExternalLinkAlt size={16} /></a>
+                  </section>
                 </section>
               </>
             )}
           </div>
         ))}
-
-
-
-
 
       </div >
 
