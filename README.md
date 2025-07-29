@@ -13,6 +13,7 @@
    - Aggiunto layout
    - Aggiunto responsive con burgerMenu
    - Dati incapsulati in `HeaderNavContent.js`
+   - Aggiunto collegamenti con i vari tag (About Me, ecc.)
 
 2) **Jumbotron**
    - Aggiunto layout
@@ -45,9 +46,7 @@
 ---
 
 ### MANCANTE ❌
-
-1) **Header/HeaderMobile**
-   - Aggiungere collegamenti con i vari tag (About Me, ecc.)
+   
 
 2) **Jumbotron**
    - Aggiungere responsive (completare)

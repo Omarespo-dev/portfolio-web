@@ -6,6 +6,7 @@ import NavContent from "../../../../data/HeaderNavContent"
 import { IoCloseSharp } from "react-icons/io5";
 
 export default function HeaderNavMobile({closeNav,showNav}) {
+    
     return (
         //se showNav e false nascondimi tutto altrimenti se e true metti dispaly block
         <div className={!showNav ? "hidden" : "block"}>
@@ -20,11 +21,12 @@ export default function HeaderNavMobile({closeNav,showNav}) {
 
                 <div className="p-[60px]">
                     <ul className="h-[600px] flex flex-col justify-evenly items-start">
-                        {NavContent.map(nav => (
-                            <li key={nav.id} className="text-[25px] pb-[6px] text-white 
-                            border-b-2 border-b-blue-200 cursor-pointer hover:text-gray-400">
-                                {nav.title}
-                            </li>
+                        {NavContent.map(item => (
+                            <a key={item.id} className="text-[25px] pb-[6px] text-white 
+                            border-b-2 border-b-blue-200 cursor-pointer hover:text-gray-400"
+                            href={`#${item.title.toLowerCase().replace(/\s/g, "-")}`}>
+                                {item.title}
+                            </a>
                         ))}
                     </ul>
                 </div>

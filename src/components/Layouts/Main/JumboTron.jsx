@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function JumboTron() {
   return (
-    <div className="bg-[#D7D7D7]  flex flex-col md:flex-row ">
+    <div className="bg-[#D7D7D7]  flex flex-col md:flex-row pt-[100px]">
       <div className="w-full md:w-[45%] flex justify-center items-center">
         <section className="flex flex-col p-[10px] ">
           <h3 className="pb-[10px] "><strong> Ciao, lo sono</strong></h3>
@@ -29,7 +29,7 @@ export default function JumboTron() {
       </div>
 
       <div className="w-full md:w-[55%] bg-[url('/img/rectangle.png')] bg-cover bg-center relative flex items-center">
-        <img src="/img/img.png" alt="" className="relative z-10 max-w-full h-auto mx-auto" />
+        <img src="/img/img.png" alt="" className="relative z-[999px] max-w-full h-auto mx-auto" />
       </div>
     </div>
   )

@@ -19,10 +19,12 @@ export default function MySkills() {
 
 
   return (
-    <div className=" flex flex-wrap justify-center">
+    <div className=" flex flex-wrap justify-center"
+    id="skills">
 
       {/* Skills button */}
-      <div className="h-[100px]  w-[90%] flex justify-center p-[20px] mt-[50px]">
+      <div className="h-[100px]  w-[90%] flex justify-center p-[20px] mt-[50px]"
+      >
         <section className="h-[60px] w-[200px] flex justify-center items-center border-3 border-b-black shadow-2xl">
           <h1 className="font-bold text-[18px]">SKILLS:</h1>
         </section>

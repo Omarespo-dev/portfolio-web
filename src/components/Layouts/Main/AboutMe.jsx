@@ -19,11 +19,14 @@ export default function AboutMe() {
 
   return (
 
-    <div className="bg-circle-center mt-[70px] flex flex-wrap justify-center">
+    <div className="bg-circle-center mt-[70px] flex flex-wrap justify-center"
+    id="about-me">
 
       {/* ABOUT ME button */}
-      <div className="h-[100px]  w-[90%] flex justify-center p-[20px] mt-[50px]">
-        <section className="h-[60px] w-[200px] flex justify-center items-center border-3 border-b-black shadow-2xl">
+      <div className="h-[100px]  w-[90%] flex justify-center p-[20px] mt-[50px]"
+      >
+        <section className="h-[60px] w-[200px] flex justify-center items-center border-3 border-b-black shadow-2xl
+        ">
           <h1 className="font-bold text-[18px]">ABOUT ME</h1>
         </section>
       </div>

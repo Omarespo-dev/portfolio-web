@@ -7,10 +7,11 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function MyProject() {
   return (
-    <div className="flex flex-wrap justify-center bg-zinc-100">
+    <div className="flex flex-wrap justify-center bg-zinc-100" id="project">
 
       {/* I MIEI PROGETTI*/}
-      <div className="h-[100px]  w-[90%] flex justify-center p-[20px] mt-[50px]">
+      <div className="h-[100px]  w-[90%] flex justify-center p-[20px] mt-[50px]"
+      >
         <section className="h-[60px] w-[200px] flex justify-center items-center border-3 border-black">
           <h1 className="font-bold text-[18px]">I MIEI PROGETTI</h1>
         </section>
