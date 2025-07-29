@@ -11,13 +11,16 @@ export default function HeaderNav({ openNav }) {
         window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
     }
     return (
-        <div className="  flex justify-center shadow-lg/10 fixed w-[100%] z-50 top-0 bg-zinc-100 ">
+        <div className=" h-[70px] flex justify-center shadow-lg/10 fixed w-[100%] z-50 top-0 bg-zinc-100 ">
             <div className=" w-[90%] flex justify-between items-center sm:justify-center">
 
                 {/* img  */}
-                <section className="w-[70px] ">
-                    <img src="/img/Logo-oe-2.png" alt="" className="cursor-pointer animate-pulse"
-                    onClick={scrollToTop}/>
+                <section className="object-contain">
+                    <a href="#home">
+                        <img src="/img/Logo-oe-2.png" alt="" className="cursor-pointer animate-pulse
+                    w-[70px] h-full "
+                            onClick={scrollToTop} />
+                    </a>
                     {/* <p>Portfolio</p> */}
                 </section>
 
