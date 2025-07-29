@@ -2,7 +2,7 @@
 
 export default function ContactMe() {
   return (
-    <div className="bg-circle-center flex flex-wrap justify-center"
+    <div className="bg-circle-center flex flex-wrap justify-center "
     >
 
       {/* ABOUT ME button */}
@@ -12,7 +12,7 @@ export default function ContactMe() {
         </section>
       </div>
 
-      <div className="w-[70%]  justify-center p-[20px]  flex-wrap flex-col mt-[30px]">
+      <div className="w-[70%]  justify-center p-[20px]  flex-wrap flex-col mt-[30px] ">
 
         {/* Content */}
         <section className=" mt-[20px] flex justify-center text-center ">
@@ -31,7 +31,7 @@ export default function ContactMe() {
       </div>
 
       {/* EXPLORE MORE button */}
-      <div className="w-[90%] flex justify-center p-[20px] mt-[50px]">
+      <div className="w-[90%] flex justify-center p-[20px] mt-[50px] mb-[50px]">
         <form action="submit" className="w-[400px] flex flex-col gap-6">
 
           <input

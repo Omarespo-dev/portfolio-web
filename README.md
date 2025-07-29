@@ -38,6 +38,10 @@
    - Aggiunto layout
    - Aggiunto responsive
 
+7) **Footer**
+   - Aggiunto layout
+   - Aggiunto responsive
+   - Aggiunto "Back to Top" con freccia
 ---
 
 ### MANCANTE ❌
@@ -62,10 +66,8 @@
    - 😊 **Extra:** aggiungere controllo per submit messaggio con `useRef`
 
 7) **Footer**
-   - Aggiungere layout
-   - Aggiungere responsive
    - Aggiungere collegamenti (gli stessi del Header)
-   - Aggiungere "Back to Top" con freccia
+   
 
 ---
 

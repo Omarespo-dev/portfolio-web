@@ -8,6 +8,7 @@ import MySkills from "../components/Layouts/Main/MySkills";
 import AboutMe from "../components/Layouts/Main/AboutMe";
 import MyProject from "../components/Layouts/Main/MyProject";
 import ContactMe from "../components/Layouts/Main/ContactMe";
+import Footer from "../components/Layouts/Footer/Footer";
 
 export default function Homepage() {
     return (
@@ -18,6 +19,7 @@ export default function Homepage() {
             <AboutMe />
             <MyProject />
             <ContactMe />
+            <Footer />
         </>
     )
 }
