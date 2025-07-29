@@ -23,17 +23,35 @@ export default function Footer() {
         </div>
 
         <div className=" w-[100%]  mt-[20px] mb-[20px] flex sm:justify-between justify-center flex-wrap">
-          <img src="/img/Logo-oe-2-white.png" alt="" className="h-[80px] " />
+          <img src="/img/Logo-oe-2-white.png" alt="" className="h-[80px] animate-pulse " />
           <section className="flex items-center gap-3 ">
-            <div className="border-[1px] border-zinc-500 text-white px-2 rounded content-center shadow-xl/20">
-              <SiGmail className="w-[20px] h-[35px] " />
-            </div>
-            <div className="border-[1px] border-zinc-500 text-white px-3 rounded content-center shadow-xl/20">
-              <FaLinkedin className="w-[20px] h-[35px] " />
-            </div>
-            <div className="border-[1px] border-zinc-500 text-white px-3 rounded content-center shadow-xl/20">
-              <FaGithub className="w-[20px] h-[35px] " />
-            </div>
+            <a
+              href="mailto:omaresposito21@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-[1px] border-zinc-500  rounded content-center shadow-xl/20 hover:bg-neutral-300"
+              title="Invia una mail"
+            >
+              <SiGmail className="w-[30px] h-[30px] text-zinc-100 hover:text-black px-1" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/omar-esposito-1544a6270"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-[1px] border-zinc-500  rounded content-center shadow-xl/20 hover:bg-neutral-300"
+              title="LinkedIn"
+            >
+              <FaLinkedin className="w-[30px] h-[30px] text-zinc-100 hover:text-black px-1" />
+            </a>
+            <a
+              href="https://github.com/Omarespo-dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-[1px] border-zinc-500   rounded content-center shadow-xl/20 hover:bg-neutral-300"
+              title="GitHub"
+            >
+              <FaGithub className="w-[30px] h-[30px] text-zinc-100  hover:text-black px-1" />
+            </a>
           </section>
         </div>
 

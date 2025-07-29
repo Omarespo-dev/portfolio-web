@@ -60,7 +60,7 @@ export default function MySkills() {
 
           onClick={() => setShow(!show)}>   {/* TOGGLE BUTTON */}
 
-          <h1 className="font-bold text-[18px] group-hover:text-white"> {show ? "EXPLORE LESS" : "EXPLORE MORE"} </h1>
+          <h1 className="font-bold text-[18px] group-hover:text-white  "> {show ? "EXPLORE LESS" : "EXPLORE MORE"} </h1>
         </section>
       </div>
 

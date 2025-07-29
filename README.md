@@ -18,6 +18,7 @@
 2) **Jumbotron**
    - Aggiunto layout
    - Aggiunto responsive con burgerMenu
+   - Aggiunto collegamenti per Gmail, LinkedIn, GitHub
 
 3) **MySkills**
    - Aggiunto layout
@@ -43,6 +44,7 @@
    - Aggiunto layout
    - Aggiunto responsive
    - Aggiunto "Back to Top" con freccia
+   - Aggiunto collegamenti  per Gmail, LinkedIn, GitHub
 ---
 
 ### MANCANTE ❌
@@ -50,7 +52,6 @@
 
 2) **Jumbotron**
    - Aggiungere responsive (completare)
-   - Aggiungere collegamenti per Gmail, LinkedIn, GitHub
 
 5) **MyProject**
    - Aggiungere responsive
@@ -64,9 +65,7 @@
    - Gestire errori per input non numerici tramite state
    - 😊 **Extra:** aggiungere controllo per submit messaggio con `useRef`
 
-7) **Footer**
-   - Aggiungere collegamenti (gli stessi del Header)
-   
+
 
 ---
 
