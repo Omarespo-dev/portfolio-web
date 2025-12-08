@@ -1,4 +1,11 @@
 import { useState } from "react"
+import emailjs from '@emailjs/browser';
+
+//emailJ Settings
+const SERVICE_ID = "service_6tgjnlv"
+const TEMPLATE_ID = "template_j9383ee"
+const PUBLIC_KEY = "W5xfXyHQ6VJoj-d_4"
+
 
 export default function ContactMe() {
   //variabili di stato PER VALIDAZIONE LIVE
@@ -24,7 +31,7 @@ export default function ContactMe() {
 
 
   //funzione invio Form
-  function HandleSubmit(e) {
+  async function HandleSubmit(e) {
     //previene il refresh della page all invio
     e.preventDefault();
 
@@ -65,19 +72,45 @@ export default function ContactMe() {
         setTextArea(false)
       }
 
-      //invio ad un arr
-      setArrForm((prevArr) => [...prevArr, formData])
 
-      //reset dei campi
-      setFormData({ name: "", email: "", cell: "", message: "" });
+      // 🔥 QUI INVECE DI METTERE NELL'ARRAY INVIAMO LA MAIL CON EMAILJS 🔥
+      try {
+        await emailjs.send(
+          SERVICE_ID,
+          TEMPLATE_ID,
+          {
+            // questi nomi DEVONO combaciare con il template di EmailJS
+            name: formData.name,        // {{name}}
+            email: formData.email,      // {{email}} (lo usi nel Reply To)
+            cell: formData.cell,        // {{cell}} se lo hai messo nel template
+            message: formData.message,  // {{message}}
+            title: "Nuovo contatto dal sito Portfolio" // {{title}} nel subject se vuoi
+          },
+          {
+            publicKey: PUBLIC_KEY,
+          }
+        )
 
-      //MSG DI SUCCESSO DEL FORM
-      setMsgSuccess("Form inviato correttamente! Riceverai presto un esito o una comunicazione.")
+        // se è andato tutto bene puoi ancora salvare in arrForm se vuoi
+        setArrForm((prevArr) => [...prevArr, formData])
 
-      //Dopo 3 secondi, svuota il messaggio
-      setTimeout(() => {
-        setMsgSuccess("")
-      },3000)
+        //reset dei campi
+        setFormData({ name: "", email: "", cell: "", message: "" });
+
+        //MSG DI SUCCESSO DEL FORM
+        setMsgSuccess("Form inviato correttamente! Riceverai presto un esito o una comunicazione.")
+
+        //Dopo 3 secondi, svuota il messaggio
+        setTimeout(() => {
+          setMsgSuccess("")
+        }, 3000)
+
+      } catch (error) {
+        console.error("Errore invio EmailJS:", error)
+        setMsgSuccess("Errore nell'invio del form, riprova tra poco.")
+      }
+
+
 
     }
 
