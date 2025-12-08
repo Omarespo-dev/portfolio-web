@@ -1,9 +1,7 @@
-
-
 export default function ContactMe() {
   return (
     <div className="bg-circle-center flex flex-wrap justify-center "
-    id="contact-me">
+      id="contact-me">
 
       {/* Contact Me button */}
       <div className="h-[100px]  w-[90%] flex justify-center p-[20px] mt-[50px]"

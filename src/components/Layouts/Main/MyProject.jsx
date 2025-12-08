@@ -1,4 +1,5 @@
 //importo dati project
+// import { useEffect, useState } from "react";
 import { projectDataNormal } from "../../../../data/ProjectData";
 
 // Importo Icone 
@@ -6,6 +7,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 
 export default function MyProject() {
+
   return (
     <div className="flex flex-wrap justify-center bg-zinc-100" id="project">
 
@@ -20,10 +22,10 @@ export default function MyProject() {
       <div className="w-[80%]  justify-center p-[5px] flex-wrap flex-col mt-[30px] ">
 
         {projectDataNormal.map(pro => (
-          <div className="flex mb-[50px] hover:bg-zinc-900 duration-200 ease-in hover:text-white hover:rounded-2xl cursor-pointer rounded-2xl" key={pro.id}>
+          <div className="flex mb-[50px] sm:flex-row flex-col items-center hover:bg-zinc-900 duration-200 ease-in hover:text-white hover:rounded-2xl cursor-pointer rounded-2xl" key={pro.id}>
             {pro.number === "02" || pro.number === "04" ? (
               <>
-                <section className="w-[60%] h-[300px] p-[30px]">
+                <section className=" sm:w-[60%] p-[30px]">
                   <h1 className="font-extrabold text-[25px]">{pro.number}</h1>
                   <h2 className="font-bold text-[25px] mt-[10px]">{pro.title}</h2>
                   <p className=" text-[14px] mt-[10px]">{pro.description}</p>
@@ -31,28 +33,30 @@ export default function MyProject() {
                     <a href={pro.linkGit} ><FaExternalLinkAlt size={16} /></a>
                   </section>
                 </section>
-                <section className="w-[50%] h-[350px] flex items-center justify-center border-2 border-zinc-400 rounded-2xl shadow-2xl/20">
+                <section className="sm:w-[50%] w-[100%]  flex items-center justify-center border-2 border-zinc-400 rounded-2xl shadow-2xl/20">
                   <video
                     src={pro.video}
                     className="w-full h-full object-cover rounded-2xl"
                     autoPlay
-                    loop
+                    onClick={(e) => e.target.play()}
+                    loop={window.innerWidth >= 768}
                     muted
                   ></video>
                 </section>
               </>
             ) : (
               <>
-                <section className="w-[50%] h-[350px] flex items-center justify-center rounded-2xl  border-2 border-zinc-400 shadow-2xl/20" >
+                <section className="sm:w-[50%] w-[100%]  flex items-center justify-center rounded-2xl  border-2 border-zinc-400 shadow-2xl/20" >
                   <video
                     src={pro.video}
                     className="w-full h-full object-cover rounded-2xl"
                     autoPlay
-                    loop
+                    onClick={(e) => e.target.play()}
+                    loop={window.innerWidth >= 768}
                     muted
                   ></video>
                 </section>
-                <section className="w-[60%] p-[30px]">
+                <section className=" sm:w-[60%]  p-[30px]">
                   <h1 className="font-extrabold text-[25px]">{pro.number}</h1>
                   <h2 className="font-bold text-[25px] mt-[10px]">{pro.title}</h2>
                   <p className="text-[14px] mt-[10px]">{pro.description}</p>

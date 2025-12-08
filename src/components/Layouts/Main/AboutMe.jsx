@@ -7,10 +7,10 @@ export default function AboutMe() {
 
   //Logica per Explore more
   function logicExploreMore() {
-    let stringa = 'Sono uno Sviluppatore Web Full Stack, con una solida formazione di base alle spalle e tanta voglia di crescere. Lavoro con HTML, CSS, JavaScript, React, Node.js, Express e MySQL per realizzare siti web moderni e applicazioni dinamiche.'
+    let stringa = 'Sono un Full Stack Web Developer con una solida base tecnica e una forte motivazione a crescere ogni giorno. Lavoro con HTML, CSS, JavaScript, React, Node.js, Express e MySQL per sviluppare siti moderni e applicazioni dinamiche, curandone sia la parte frontend che backend. Sto ampliando le mie competenze con tecnologie come TypeScript, TailwindCSS, PHP e il linguaggio C, per migliorare la mia versatilità e la qualità del codice che scrivo.'
 
     if (exploreMore) {
-      stringa += "Mi piace affrontare nuove sfide, imparare tecnologie sempre diverse e dare vita a idee creative trasformandole in codice funzionante. Attualmente sono alla ricerca di progetti stimolanti e opportunità per migliorarmi ogni giorno."
+      stringa += " Mi piace affrontare nuove sfide, imparare continuamente e trasformare idee creative in soluzioni funzionali e ben strutturate. Attualmente sono alla ricerca di progetti stimolanti e opportunità che mi permettano di crescere professionalmente e mettere in pratica le mie competenze."
     }
 
     return stringa
@@ -18,9 +18,7 @@ export default function AboutMe() {
 
 
   return (
-
-    <div className="bg-circle-center mt-[70px] flex flex-wrap justify-center"
-    id="about-me">
+    <section id="about-me" className="bg-circle-center mt-[70px] flex flex-wrap justify-center">
 
       {/* ABOUT ME button */}
       <div className="h-[100px]  w-[90%] flex justify-center p-[20px] mt-[50px]"
@@ -61,6 +59,6 @@ export default function AboutMe() {
           <h1 className="font-bold text-[15px] ">{exploreMore ? "EXPLORE LESS" : "EXPLORE"}</h1>
         </section>
       </div>
-    </div>
+    </section>
   )
 }

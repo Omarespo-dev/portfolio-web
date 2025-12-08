@@ -1,4 +1,3 @@
-
 //importo dati learning
 import { useState } from "react";
 import { skills, learningSkill } from "../../../../data/Skills";
@@ -6,7 +5,6 @@ import { skills, learningSkill } from "../../../../data/Skills";
 
 
 export default function MySkills() {
-
   //stato per tenere traccia del explore more per la show
   const [show, setShow] = useState(false)
 
@@ -16,16 +14,13 @@ export default function MySkills() {
   //Prendo il restante dall arr
   const takeLast5 = skills.slice(4)
 
-
-
   return (
-    <div className=" flex flex-wrap justify-center"
-    id="skills">
+    <section id="skills" className=" flex flex-wrap justify-center">
 
       {/* Skills button */}
       <div className="h-[100px]  w-[90%] flex justify-center p-[20px] mt-[50px]"
       >
-        <section className="h-[60px] w-[200px] flex justify-center items-center border-3 border-b-black shadow-2xl">
+        <section className="h-[60px] w-[200px] flex justify-center items-center border-3 border-b-black shadow-2xl" >
           <h1 className="font-bold text-[18px]">SKILLS:</h1>
         </section>
       </div>
@@ -82,7 +77,7 @@ export default function MySkills() {
         ))}
       </div>
 
-
-    </div>
+    </section>
   )
 }
+
