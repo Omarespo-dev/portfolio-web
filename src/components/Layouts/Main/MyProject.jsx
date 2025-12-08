@@ -36,11 +36,12 @@ export default function MyProject() {
                 <section className="sm:w-[50%] w-[100%]  flex items-center justify-center border-2 border-zinc-400 rounded-2xl shadow-2xl/20">
                   <video
                     src={pro.video}
-                    className="w-full h-full object-cover rounded-2xl"
+                    className="w-full h-full object-cover rounded-2xl pointer-events-none"
                     autoPlay
-                    onClick={(e) => e.target.play()}
-                    loop={window.innerWidth >= 768}
+                    loop
                     muted
+                    playsInline
+                    preload="auto"                     // carica almeno l'anteprima
                   ></video>
                 </section>
               </>
@@ -49,11 +50,12 @@ export default function MyProject() {
                 <section className="sm:w-[50%] w-[100%]  flex items-center justify-center rounded-2xl  border-2 border-zinc-400 shadow-2xl/20" >
                   <video
                     src={pro.video}
-                    className="w-full h-full object-cover rounded-2xl"
+                    className="w-full h-full object-cover rounded-2xl pointer-events-none"
                     autoPlay
-                    onClick={(e) => e.target.play()}
-                    loop={window.innerWidth >= 768}
+                    loop
                     muted
+                    playsInline
+                    preload="auto"                     // carica almeno l'anteprima
                   ></video>
                 </section>
                 <section className=" sm:w-[60%]  p-[30px]">
