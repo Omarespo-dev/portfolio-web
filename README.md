@@ -10,8 +10,8 @@ Il sito è stato realizzato con un design moderno, animazioni leggere e componen
 
 * **React.js**
 * **JavaScript (ES6+)**
-* **CSS / SCSS / Styled Components** *(specifica il tuo metodo)*
-* **Vite / Create React App** *(specifica tool di build)*
+* **CSS / SCSS / TailwindCss** 
+* **Vite** 
 * **React Hooks**
 
 ---
