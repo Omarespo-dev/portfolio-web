@@ -28,6 +28,7 @@ export default function AboutMe() {
           <h1 className="font-bold text-[18px]">ABOUT ME</h1>
         </section>
       </div>
+      
 
       <div className="w-[70%]  justify-center p-[20px]  flex-wrap flex-col mt-[30px]">
         {/* SEPARATOR */}
