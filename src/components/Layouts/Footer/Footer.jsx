@@ -8,19 +8,25 @@ import { FaGithub } from "react-icons/fa";
 //importo funzione per link
 import SocialIcon from "../common/SocialIcon";
 
+import { Link, animateScroll as scroll } from "react-scroll";
+
+
 export default function Footer() {
 
   //Scrollo fino a sopra 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
-  }
+    scroll.scrollToTop({
+      duration: 500,          // durata in ms (500 = mezzo secondo)
+      smooth: "easeInOutQuad" // tipo di easing
+    });
+  };
 
   return (
     <div className=" bg-zinc-900 flex justify-center">
       <div className="w-[90%]  mt-[20px]">
         {/* Back to Top */}
         <div className=" w-[100%]  flex justify-center flex-col items-center">
-          <CgChevronDoubleUp size={27} className="text-white animate-bounce cursor-pointer" onClick={scrollToTop} />
+          <CgChevronDoubleUp size={27} className="text-white animate-bounce cursor-pointer transition-all duration-500 ease-in-out hover:scale-125" onClick={scrollToTop} />
           <p className="text-white font-bold">BACK TO TOP</p>
         </div>
 
