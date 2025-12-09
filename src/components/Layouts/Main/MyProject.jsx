@@ -22,7 +22,10 @@ export default function MyProject() {
       <div className="w-[80%]  justify-center p-[5px] flex-wrap flex-col mt-[30px] ">
 
         {projectDataNormal.map(pro => (
-          <div className="flex mb-[50px] sm:flex-row flex-col items-center hover:bg-zinc-900 duration-200 ease-in hover:text-white hover:rounded-2xl cursor-pointer rounded-2xl" key={pro.id}>
+          <div className={`
+            flex mb-[50px] ${pro.number === "02" || pro.number === "04" ? "flex-col-reverse" : "flex-col"} items-center hover:bg-zinc-900 duration-200 ease-in hover:text-white hover:rounded-2xl cursor-pointer rounded-2xl
+            sm:flex-row`} key={pro.id}>
+              
             {pro.number === "02" || pro.number === "04" ? (
               <>
                 <section className=" sm:w-[60%] p-[30px]">

@@ -34,14 +34,19 @@ export default function AboutMe() {
         </section>
 
         {/* Content */}
-        <section className="mt-[50px] flex justify-center text-center transition-all duration-200 ease-in">
-          <p>
+        <section className={`
+          mt-[50px] flex justify-center text-center
+          overflow-hidden
+          transition-all duration-500 ease-in-out
+          ${exploreMore ? "max-h-[500px]" : "max-h-[200px]"}
+        `}>
+          <p className="overflow-hidden max-h-full">
             {baseText}
             <span
               className={`
                 inline-block
                 transition-all duration-500 ease-in-out
-                ${exploreMore ? "opacity-100 translate-y-0" : "opacity-0 translate-y-1"}
+                ${exploreMore ? "opacity-100" : "opacity-0 hidden"}
               `}
             >
               {extraText}
@@ -66,7 +71,7 @@ export default function AboutMe() {
       h-[50px] w-[130px] flex justify-center items-center
       border-r-2 border-l-2 border-b-black shadow-2xl cursor-pointer
       hover:bg-zinc-900 hover:text-white
-      transition-all duration-200 ease-in
+      transition-all duration-200 ease-in 
     "
           onClick={() => setExploreMore(!exploreMore)}>
           <h1 className="font-bold text-[15px] ">{exploreMore ? "EXPLORE LESS" : "EXPLORE"}</h1>

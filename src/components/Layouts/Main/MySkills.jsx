@@ -48,7 +48,7 @@ export default function MySkills() {
         w-[55%] flex justify-center p-[20px] gap-[50px] flex-wrap
         overflow-hidden
         transition-all duration-500 ease-in-out
-        ${show ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}
+        ${show ? "max-h-[1200px] opacity-100" : "max-h-0 opacity-0"}
       `}>
         {takeLast5.map((skill) => (
           <section
