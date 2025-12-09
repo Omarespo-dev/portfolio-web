@@ -26,7 +26,8 @@ export default function ContactMe() {
     name: "",
     email: "",
     cell: "",
-    message: ""
+    message: "",
+    botField: "" //bot field
   })
 
 
@@ -34,6 +35,12 @@ export default function ContactMe() {
   async function HandleSubmit(e) {
     //previene il refresh della page all invio
     e.preventDefault();
+
+    // 🛑 Se il campo honeypot è pieno → è un bot
+    if (formData.botField) {
+      console.log("Bot rilevato, invio bloccato.");
+      return;
+    }
 
     //validazione all invio se almeno uno dei campi e vuoto
     if (formData.name.length === 0 ||
@@ -73,7 +80,7 @@ export default function ContactMe() {
       }
 
 
-      // 🔥 QUI INVECE DI METTERE NELL'ARRAY INVIAMO LA MAIL CON EMAILJS 🔥
+      // QUI INVECE DI METTERE NELL'ARRAY INVIAMO LA MAIL CON EMAILJS 
       try {
         await emailjs.send(
           SERVICE_ID,
@@ -195,6 +202,15 @@ export default function ContactMe() {
       {/* EXPLORE MORE button */}
       <div className="w-[90%] flex justify-center p-[20px] mt-[50px] mb-[50px]">
         <form action="submit" className="w-[400px] flex flex-col gap-6" onSubmit={HandleSubmit}>
+
+          {/* Honeypot invisibile */}
+          <input
+            type="text"
+            name="botField"
+            value={formData.botField}
+            onChange={HandleChange}
+            style={{ display: "none" }}
+          />
 
           <input
             type="text"
