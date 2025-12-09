@@ -44,7 +44,12 @@ export default function MySkills() {
       </div>
 
       {/* Skills ULTIMI 5 CON LOGICA EXPLORE MORE */}
-      <div className={show ? "w-[55%] flex justify-center p-[20px] gap-[50px] flex-wrap" : "hidden"}>
+      <div className={`
+        w-[55%] flex justify-center p-[20px] gap-[50px] flex-wrap
+        overflow-hidden
+        transition-all duration-500 ease-in-out
+        ${show ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}
+      `}>
         {takeLast5.map((skill) => (
           <section
             key={skill.id}
